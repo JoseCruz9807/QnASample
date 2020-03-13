@@ -3,6 +3,8 @@
 
 // index.js is used to setup and configure your bot
 
+
+
 // Import required packages
 const path = require('path');
 const restify = require('restify');
@@ -60,6 +62,8 @@ server.listen(process.env.port || process.env.PORT || 3978, function() {
     console.log(`\nGet Bot Framework Emulator: https://aka.ms/botframework-emulator`);
 });
 
+
+////
 // Listen for incoming activities and route them to your bot main dialog.
 server.post('/api/messages', (req, res) => {
     // Route received a request to adapter for processing
